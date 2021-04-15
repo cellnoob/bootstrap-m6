@@ -81,6 +81,20 @@
   }
 }
 
+/* Desaparece lupa responsive tablet */
+
+@media (max-width: 767px) {
+  .form-inline {
+    visibility: visible !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .form-inline {
+    visibility: hidden;
+  }
+}
+
 .header-blue .navbar .navbar-nav > li > .dropdown-menu {
   margin-top: -5px;
   box-shadow: 0 4px 8px rgba(0,0,0,.1);
@@ -163,6 +177,14 @@
   }
 }
 
+@media (max-width:560px) {
+  h1 {
+    /*word-wrap: break-word;*/
+    display: inline;
+    /*flex-wrap: wrap;*/
+  }
+}
+
 .header-blue .hero p {
   color: rgba(255,255,255,0.8);
   font-size: 20px;
@@ -213,5 +235,16 @@
   right: -60%;
   transform: rotate(-19deg);
   opacity: 0.2;
+}
+
+/* Color formulario placeholder */
+
+.form-group:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+::placeholder {
+  color: rgba(255,255,255,0.60) !important;
 }
 
