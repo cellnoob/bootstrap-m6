@@ -248,3 +248,7 @@
   color: rgba(255,255,255,0.60) !important;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
